@@ -14,8 +14,8 @@ Creating a R script called run_analysis.R that does the following.
 1. Download the data source into a folder on your local drive. You'll have a "UCI HAR Dataset" folder after unzip.
 2. Put "run_analysis.R" in the parent folder of "UCI HAR Dataset"
 3. Then set it as your working directory using "setwd()" function in RStudio.
-3. Finally run "source("run_analysis.R")" and it will generate a new file "tidy_data.txt" in your working directory. Please   
-   exclude first and last inverted commas.
+4. Finally run "source("run_analysis.R")". Please exclude first and last inverted commas. It will then generate a new file  
+   "tidy_data.txt" in your working directory. 
 
 # Dependencies
 
