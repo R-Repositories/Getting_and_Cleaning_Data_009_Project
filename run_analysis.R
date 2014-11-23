@@ -19,7 +19,7 @@ if (!require("reshape2")) {
 require("data.table")
 require("reshape2")
 
-#set working directory to the location where the UCI HAR Dataset was unzipped
+# Stting up working directory to the location where the UCI HAR Dataset was unzipped
 
 setwd("~/Downloads/UCI HAR Dataset")
 
