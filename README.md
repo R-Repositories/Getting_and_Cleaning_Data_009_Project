@@ -1,5 +1,5 @@
-# Getting and Cleaning Data (getdata-009) - Course Project
-  ========================================================
+# Getting and Cleaning Data using R
+  =================================
 
 Creating a R script called run_analysis.R that does the following.
 
