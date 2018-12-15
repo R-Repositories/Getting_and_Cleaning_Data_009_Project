@@ -6,7 +6,7 @@
 # iv) Appropriately labels the data set with descriptive activity names.
 # v) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-# Checking and installing required R packages
+# Checking and installing required R packages if not already installed
 
 if (!require("data.table")) {
   install.packages("data.table")
@@ -20,7 +20,6 @@ require("data.table")
 require("reshape2")
 
 # Changing the working directory to the location where the UCI HAR Dataset was unzipped
-
 setwd("~/Downloads/UCI HAR Dataset")
 
 # Load: activity labels
@@ -80,3 +79,5 @@ melt_data      = melt(data, id = id_labels, measure.vars = data_labels)
 tidy_data   = dcast(melt_data, subject + Activity_Label ~ variable, mean)
 
 write.table(tidy_data, file = "./tidy_data.txt", row.names=FALSE)
+
+
